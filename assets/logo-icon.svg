@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 144 144" role="img" aria-label="Shashi Lab">
+  <defs>
+    <linearGradient id="bg" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="ub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="80" cy="80" r="72" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+
+  <path d="M80,18 C52,38 52,62 80,80 C108,98 108,122 80,142"
+        stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M80,18 C108,38 108,62 80,80 C52,98 52,122 80,142"
+        stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <line x1="67" y1="32"  x2="93"  y2="32"  stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="57" y1="50"  x2="103" y2="50"  stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="56" y1="68"  x2="104" y2="68"  stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="56" y1="94"  x2="104" y2="94"  stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="57" y1="112" x2="103" y2="112" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="67" y1="130" x2="93"  y2="130" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Ub tag 1 — upper right -->
+  <line x1="103" y1="50" x2="117" y2="41" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="129" cy="33" r="12" fill="url(#ub)"/>
+
+  <!-- Ub tag 2 — lower left -->
+  <line x1="57" y1="112" x2="43" y2="121" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="31" cy="129" r="12" fill="url(#ub)" opacity="0.9"/>
+</svg>

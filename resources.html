@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashi Lab — Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="nav-crest" aria-hidden="true"><span class="nav-crest-gem"></span></span>Shashi<span>Lab</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"       >Home</a></li>
+      <li><a href="team.html"        >Team</a></li>
+      <li><a href="research.html"    >Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html"        >News</a></li>
+      <li><a href="contact.html"     >Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label">Open Science</div>
+    <h1>Resources</h1>
+    <p>Software, datasets, protocols, and tutorials freely shared with the research community.</p>
+  </div>
+</section>
+
+<!-- Software & Code -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Software</div>
+    <h2 style="margin-bottom:8px;">Tools &amp; Code</h2>
+    <p style="max-width:600px;margin-bottom:32px;">All software developed in the lab is open-source and available on GitHub. We welcome contributions and bug reports.</p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>SpliceScan</h4>
+        <p>Deep learning pipeline for detecting cryptic and aberrant splice sites in long-read (PacBio / ONT) RNA-seq data. Achieves state-of-the-art accuracy on benchmark datasets.</p>
+        <div class="resource-footer">
+          <span>Python · v2.1.0</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>scRNAkit</h4>
+        <p>A scalable, containerized Nextflow workflow for end-to-end single-cell RNA-seq analysis: alignment, QC, clustering, annotation, and trajectory inference.</p>
+        <div class="resource-footer">
+          <span>Nextflow / Python · v1.4.2</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>eCLIP-Tools</h4>
+        <p>Bioinformatics pipeline for processing eCLIP-seq data: adapter trimming, alignment, peak calling, motif enrichment, and visualization. Optimized for low-input samples.</p>
+        <div class="resource-footer">
+          <span>Snakemake · v3.0.1</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>m6AMapper</h4>
+        <p>Probabilistic framework for calling m6A sites from MeRIP-seq and direct RNA sequencing data with accurate site-level quantification and differential methylation testing.</p>
+        <div class="resource-footer">
+          <span>R package · v1.2.0</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>RBPnet</h4>
+        <p>Graph neural network model for predicting RNA–protein binding affinities from sequence and secondary structure. Pre-trained on 150 eCLIP-seq datasets.</p>
+        <div class="resource-footer">
+          <span>Python / PyTorch · v0.9.0</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-code">⚙️ Software</div>
+        <h4>MultiOmicsKit</h4>
+        <p>Framework for integrating RNA-seq, ATAC-seq, and proteomics data using factor analysis and regularized multi-block PCA methods. Includes interactive visualization.</p>
+        <div class="resource-footer">
+          <span>R / Python · v1.0.0</span>
+          <a href="#" class="btn btn-sm btn-primary">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Datasets -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-label">Data</div>
+    <h2 style="margin-bottom:8px;">Published Datasets</h2>
+    <p style="max-width:600px;margin-bottom:32px;">Raw and processed sequencing data are deposited in GEO / SRA. Processed files and metadata tables are also available via Zenodo.</p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="res-type rt-data">📊 Dataset</div>
+        <h4>Single-cell splicing atlas — human neuronal differentiation</h4>
+        <p>scRNA-seq + long-read data from 14 time points of iPSC-to-neuron differentiation. 42,000 cells, 15 donors. GEO: GSE000001.</p>
+        <div class="resource-footer">
+          <span>Nature Neuroscience, 2025</span>
+          <a href="#" class="btn btn-sm btn-outline">GEO →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-data">📊 Dataset</div>
+        <h4>ALS motor neuron eCLIP-seq compendium</h4>
+        <p>eCLIP-seq profiles for 28 RBPs in control and ALS patient-derived motor neurons. Includes processed peak files and binding site annotations. GEO: GSE000002.</p>
+        <div class="resource-footer">
+          <span>Cell Reports, 2024</span>
+          <a href="#" class="btn btn-sm btn-outline">GEO →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-data">📊 Dataset</div>
+        <h4>Glioblastoma lncRNA CRISPR screen</h4>
+        <p>Genome-wide CRISPR interference (CRISPRi) screen targeting 5,800 lncRNA loci in U87-MG cells. Raw counts and gene-level fitness scores. GEO: GSE000003.</p>
+        <div class="resource-footer">
+          <span>Cancer Cell, 2023</span>
+          <a href="#" class="btn btn-sm btn-outline">GEO →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-data">📊 Dataset</div>
+        <h4>m6A atlas across 12 human cell lines</h4>
+        <p>MeRIP-seq and m6A-seq under basal and stress conditions across 12 cell lines. Over 200,000 m6A sites with quantified methylation levels. Zenodo: 0000001.</p>
+        <div class="resource-footer">
+          <span>Molecular Cell, 2025</span>
+          <a href="#" class="btn btn-sm btn-outline">Zenodo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Protocols -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Protocols</div>
+    <h2 style="margin-bottom:8px;">Lab Protocols</h2>
+    <p style="max-width:600px;margin-bottom:32px;">Detailed experimental protocols developed and optimized in our lab. All protocols are hosted on protocols.io and are freely accessible.</p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="res-type rt-protocol">🔬 Protocol</div>
+        <h4>Low-input eCLIP-seq (10,000 cells)</h4>
+        <p>Optimized eCLIP-seq protocol for rare cell populations and low-abundance RBPs. Includes adapter ligation, size-selection, and library prep steps.</p>
+        <div class="resource-footer">
+          <span>Nature Protocols, 2023</span>
+          <a href="#" class="btn btn-sm btn-outline">protocols.io →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-protocol">🔬 Protocol</div>
+        <h4>RNA interactome capture (RIC) from mammalian cells</h4>
+        <p>Poly(A)-capture-based method to isolate all RNA-binding proteins from total cell lysate. Optimized for HEK293T, U87-MG, iPSC-derived neurons.</p>
+        <div class="resource-footer">
+          <span>Updated 2024</span>
+          <a href="#" class="btn btn-sm btn-outline">protocols.io →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-protocol">🔬 Protocol</div>
+        <h4>CRISPRi screen for lncRNA function</h4>
+        <p>Step-by-step protocol for genome-scale CRISPRi screens targeting lncRNA loci, including sgRNA library design, lentiviral delivery, and NGS readout.</p>
+        <div class="resource-footer">
+          <span>Updated 2023</span>
+          <a href="#" class="btn btn-sm btn-outline">protocols.io →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-protocol">🔬 Protocol</div>
+        <h4>smFISH for lncRNA localization</h4>
+        <p>Single-molecule FISH protocol optimized for detecting low-abundance lncRNA transcripts in cultured cells and cryosectioned tissue. Probe design guidelines included.</p>
+        <div class="resource-footer">
+          <span>Updated 2025</span>
+          <a href="#" class="btn btn-sm btn-outline">protocols.io →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Tutorials -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-label">Learning</div>
+    <h2 style="margin-bottom:8px;">Tutorials &amp; Teaching Materials</h2>
+    <p style="max-width:600px;margin-bottom:32px;">Jupyter notebooks, lecture slides, and walkthroughs used in our lab meetings, workshops, and graduate courses.</p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="res-type rt-tutorial">📘 Tutorial</div>
+        <h4>Getting started with scRNA-seq analysis</h4>
+        <p>Hands-on Jupyter notebook walking through a complete scRNA-seq analysis using Scanpy: QC, normalization, clustering, UMAP, and cell type annotation.</p>
+        <div class="resource-footer">
+          <span>Python · Jupyter</span>
+          <a href="#" class="btn btn-sm btn-outline">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-tutorial">📘 Tutorial</div>
+        <h4>Alternative splicing analysis with rMATS</h4>
+        <p>Step-by-step guide to detecting differential splicing events from bulk RNA-seq using rMATS, including downstream visualization and functional enrichment.</p>
+        <div class="resource-footer">
+          <span>R / bash</span>
+          <a href="#" class="btn btn-sm btn-outline">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="res-type rt-tutorial">📘 Tutorial</div>
+        <h4>Introduction to eCLIP-seq data analysis</h4>
+        <p>Lecture slides and notebook for a graduate course module on eCLIP-seq: experimental design, data processing, peak calling, and motif analysis.</p>
+        <div class="resource-footer">
+          <span>Slides + Notebook</span>
+          <a href="#" class="btn btn-sm btn-outline">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ShashiLab</h3>
+        <p>Department of Biochemistry<br>University of Hyderabad<br>Hyderabad, Telangana, India</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#join">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">NCBI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shashi Lab. All rights reserved.</span>
+      <span>Built with ❤️ for science</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
